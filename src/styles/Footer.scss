@@ -1,0 +1,69 @@
+@use './vars';
+
+.Footer {
+    
+    &__container {
+        padding: var(--padding-sm);
+        &__datos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__title{
+                font-family: var(--new);
+                font-weight: bold;
+                line-height: 18px;
+                text-align: center;
+                padding-top: var(--margin-bottom);
+            }
+            &__ciudad{
+                color: #777;
+                line-height: var(--lg);
+            }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &__informacion{
+                font-family: var(--new);
+                font-weight: bold;
+                line-height: 18px;
+                text-align: center;
+                padding-top: var(--margin-bottom);
+            }
+            &__cuenta{
+                color: #777;
+                line-height: var(--lg);
+            }
+        }
+        &__powered {
+            background-color: black;
+            padding: 1em;
+            font-family: var(--fleur);
+            font-size: var(--sm);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+@media (min-width: 640px){
+	.Footer__container{
+        display: flex;
+        justify-content: space-evenly;
+        &__datos{
+            align-items:flex-start;
+            &__ciudad{
+                text-align: left;
+            }
+        }
+        .Footer__container__info{
+            align-items: flex-start;
+        }
+    }
+    
+}

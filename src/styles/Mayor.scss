@@ -1,0 +1,80 @@
+@use './vars';
+
+.Mayor {
+    padding: var(--padding-sm);
+    & p {
+        font-size: var(--sm);
+        padding-bottom: var(--md);
+        font-family: var(--new);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__card {
+        padding: var(--sm) 0;
+
+    }
+}
+
+.CardMayor {
+    background: var(--plomo-bajo);
+    padding-bottom: 2rem;
+    padding: var(--padding-sm);
+    border-radius: 15px;
+    min-width: 250px;
+    max-width: 400px;
+
+    &__image {
+        margin: 0 auto;
+        display: flex;
+        padding: var(--sm) 0;
+        min-width: 10em;
+        max-width: 100%;
+    }
+    &__desc {
+        padding-bottom: var(--md);
+    }
+}
+@media (min-width: 640px){
+    .Mayor__container{
+        display: flex;
+        justify-content: space-evenly;
+       gap: 20px;
+    }
+    .Mayor {
+		padding: var(--padding-md);
+	}
+
+}
+@media (min-width: 900px){
+    .Mayor {
+		padding: var(--padding-lg);
+        &__primero{
+            &__acumular{
+                margin: 0 200px;
+            }
+        }
+	}
+}
+@media (min-width: 1200px){
+    .Mayor {
+		padding: var(--padding-xs);
+        &__primero{
+            &__acumular{
+                margin: 0 300px;
+            }
+        }
+	}
+}
+@media (min-width: 1500px){
+    .Mayor {
+		padding: var(--padding-ut);
+        &__primero{
+            &__acumular{
+                margin: 0 300px;
+            }
+        }
+	}
+
+}

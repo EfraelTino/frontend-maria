@@ -1,0 +1,67 @@
+@use './vars';
+.cardRecomend{
+    padding: var(--padding-sm);
+   
+    &__principal{
+        background: var(--card);
+        border-radius: 8px;
+        &__title{
+            display: flex;
+            gap: 10px;
+            padding: 8px;
+            align-items: center;
+            &__principal{
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: 0.02em;
+                margin: 0;
+                padding: 0;
+            }
+        }
+        &__descripcion{
+            padding: 8px;
+            text-align: justify;
+            &__desc{
+                margin-top: 0;
+                color: #777;
+            }
+        }
+    }
+}
+
+@media (min-width: 640px){
+    .CardContainer{
+        padding: var(--padding-md);
+        display: grid;
+        grid-template: 
+        repeat(1, 1fr) /repeat(2,1fr);
+        gap: var(--sm);
+    }
+    .cardRecomend{
+        padding: 0;
+        &__principal{
+            height: 100%;   
+        }
+    }
+}
+@media (min-width: 900px){
+    .CardContainer{
+        padding: var(--padding-lg);
+        grid-template: 
+        repeat(1, 1fr) /repeat(3,1fr);
+        gap: var(--md);
+    }
+}
+@media (min-width: 1200px){
+    .CardContainer{
+        padding: var(--padding-xs);
+        gap: 50px;
+    }
+}
+@media (min-width: 1800px){
+    .CardContainer{
+        padding: var(--padding-ut);
+        gap: 100px;
+    }
+}
+

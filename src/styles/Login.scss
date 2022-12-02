@@ -1,0 +1,81 @@
+.SignIn{
+    background-image: url('../assets/img/tela.png');
+    box-sizing: border-box;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    &__container{
+        background-color: var(--white);
+        border-radius: 1rem;
+        width: 100%;
+        &__form{
+            padding: var(--sm);
+            text-align: left;
+            &__content{
+                padding-bottom: 10px;
+                &__boton{
+                    display: grid;
+                    padding: 20px;
+                    & button{
+                        background: rgb(18, 70, 255);
+                        border-radius: 20px ;
+                        border: 1px solid rgb(18, 70, 255) ;
+                        color: white;
+                        padding: 6px 0;
+                    }:hover{
+                        background: rgb(8, 61, 255);
+                    }
+                }
+                &__google{
+                    display: grid;
+                    padding: 20px;
+                    & button{
+                        background-color: var(--white);
+                        border-radius: 20px ;
+                        border: 1px solid rgb(0, 0, 0) ;
+                        color: rgb(0, 0, 0);
+                        padding: 6px 0;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 420px) {
+    .SignIn{
+        padding: 3rem;
+    }
+}
+@media (min-width: 640px) {
+    .SignIn{
+        padding: 8em;
+    }
+}
+@media (min-width: 900px) {
+    .SignIn{
+        padding: 12rem;
+    }
+}
+@media (min-width: 1200px) {
+    .SignIn{
+        padding: 18rem;
+    }
+}
+@media (min-width: 1500px) {
+    .SignIn{
+        padding: 21rem;
+    }
+}
+@media (min-width: 1800px) {
+    .SignIn{
+        padding: 25rem;
+    }
+}

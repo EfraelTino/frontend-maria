@@ -1,0 +1,50 @@
+.Intro {
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: url('https://solalpaca.pe/wp-content/uploads/2022/07/julio-bg4-fibras.jpg');
+    background-size: cover;
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: var(--padding-sm);
+        color: var(--white);
+
+    }
+    &__img{
+        padding: var(--padding-sm);
+    } 
+    & img{
+        min-width: 10em;
+    max-width: 100%;
+    display: flex;
+    padding-bottom: 1rem;
+    }
+}
+@media (min-width: 640px){
+    .Intro{
+        padding: var(--padding-md);
+    }
+    .Intro__img__container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 900px){
+    .Intro{
+        padding: var(--padding-lg);
+    }
+}
+@media (min-width: 1200px){
+    .Intro{
+        padding: var(--padding-xs);
+    }
+}
+@media (min-width: 1200px){
+    .Intro{
+        padding: var(--padding-ut);
+    }
+}

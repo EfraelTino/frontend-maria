@@ -1,0 +1,62 @@
+@use './vars';
+.Andes{
+    font-family: var(--fleur);
+    color: var(--white);
+    box-sizing: border-box;
+    &__mano{
+        background-image: url('https://solalpaca.pe/wp-content/uploads/2022/06/herencia-textil.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 1500;
+        font-size: 30px;
+    }
+    &__calidad{
+        background-image: url('https://solalpaca.pe/wp-content/uploads/2022/06/museo-amano.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media (min-width: 640px){
+	.Andes{
+        
+        display: flex;
+        justify-content: center;
+        &__calidad, &__mano{
+            height: 15rem;
+        }
+    }
+}
+@media (min-width: 900px){
+	.Andes{
+        &__calidad, &__mano{
+            height: 18rem;
+        }
+    }
+}
+@media (min-width: 1200px){
+	.Andes{
+        &__calidad, &__mano{
+            height: 21rem;
+        }
+    }
+}
+@media (min-width: 1500px){
+	.Andes{
+        &__calidad, &__mano{
+            height: 25rem;
+        }
+    }
+}
